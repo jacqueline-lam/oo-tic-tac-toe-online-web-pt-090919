@@ -111,7 +111,6 @@ class TicTacToe
   end
 
   def full?
-    binding.pry
     @board.none?(" ")
   end
 end
