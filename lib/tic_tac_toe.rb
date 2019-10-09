@@ -112,7 +112,7 @@ class TicTacToe
 
   def full?
     binding.pry
-    @board.include?(" ")
+    @board.none?(" ")
   end
 end
 # foo = TicTacToe.initialize
