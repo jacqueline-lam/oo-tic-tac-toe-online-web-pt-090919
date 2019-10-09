@@ -128,17 +128,9 @@ class TicTacToe
   end
   
   def winner
-    result = won?
-    return result unless result
+    result = won? # this can be either an array or nil
+    return nil if !result.nil? # return nil
     return @board[result[0]]
-    
-    # if draw? 
-    #   return nil
-    # else
-      
-    #   idx = result[0]
-    #   return @board[idx] 
-    # end
   end
   
 end
