@@ -139,6 +139,7 @@ class TicTacToe
     until over? do
       turn
     end
+    puts "Congratulations!"
 
     # must allow players to take turn
     # check if game is over after every turn
