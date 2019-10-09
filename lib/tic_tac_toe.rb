@@ -112,7 +112,7 @@ class TicTacToe
 
   def full?
     #return true if every element in the board contains either an "X" or an "O"
-    @board.none?(" ")
+    turn_count == 9
   end
   
   def draw?
