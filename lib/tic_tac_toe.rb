@@ -134,6 +134,10 @@ class TicTacToe
     # so take the index from it and grab it from board
   end
   
-  def 
+  def play
+    # must allow players to take turn
+    # check if game is over after every turn
+    # conclusion: won/ ended in draw, report to user the outcome
+  end
   
 end
