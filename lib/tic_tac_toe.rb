@@ -130,9 +130,10 @@ class TicTacToe
   def winner
     result = won? # this can be either an array or nil
     return nil unless result # return nil unless result is truthy
-    return @board[result[0]] # if result is truthy, then i know it has to be an array, so take the index from it and grab it from board
+    return @board[result[0]] # if result is truthy, then it has to be an array
+    # so take the index from it and grab it from board
   end
   
+  def 
+  
 end
-# foo = TicTacToe.initialize
-# foo = TicTacToe.initialize(some_kind_of_board)
