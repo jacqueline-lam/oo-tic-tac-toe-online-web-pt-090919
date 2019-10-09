@@ -90,7 +90,7 @@ class TicTacToe
     return display_board
   end
 
-  
+  # return types: [Array, nil, false]
   def won?
     # return false/nil for a draw OR winning combo for a win 
     # iterate thru each winning combo and compare each row @board's ele with combo's idx
@@ -128,12 +128,17 @@ class TicTacToe
   end
   
   def winner
-    if draw? 
-      return nil
-    else
-      idx = won?[0]
-      return @board[idx] 
-    end
+    result = won?
+    return result unless result
+    return @board[result[0]]
+    
+    # if draw? 
+    #   return nil
+    # else
+      
+    #   idx = result[0]
+    #   return @board[idx] 
+    # end
   end
   
 end
