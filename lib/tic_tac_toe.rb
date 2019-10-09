@@ -110,7 +110,9 @@ class TicTacToe
     # }
   end
 
-  
+  def full?
+    @board.!include?(" ")
+  end
 end
 # foo = TicTacToe.initialize
 # foo = TicTacToe.initialize(some_kind_of_board)
