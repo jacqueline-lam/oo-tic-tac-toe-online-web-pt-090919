@@ -128,10 +128,14 @@ class TicTacToe
   end
   
   def winner
-    
-    idx = won?[0]
-    @board[idx] if won?
+    if draw? 
+      return nil
+    else
+      idx = won?[0]
+      return @board[idx] 
+    end
   end
+  
 end
 # foo = TicTacToe.initialize
 # foo = TicTacToe.initialize(some_kind_of_board)
