@@ -113,6 +113,10 @@ class TicTacToe
   def full?
     @board.none?(" ")
   end
+  
+  def draw?
+    
+  end
 end
 # foo = TicTacToe.initialize
 # foo = TicTacToe.initialize(some_kind_of_board)
