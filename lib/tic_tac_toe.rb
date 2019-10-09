@@ -139,9 +139,13 @@ class TicTacToe
     until over? do
       turn
     end
-    puts "Congratulations #{winner}!"
-    puts "Cat's Game!" if draw?
-
+    
+    if won? #congratulate winner if game was won
+      puts "Congratulations #{winner}!"
+    elsif draw? #tell player game ended in draw if game was a draw
+      puts "Cat's Game!" if draw?
+    end
+    
     # must allow players to take turn
     # check if game is over after every turn
     # conclusion: won/ ended in draw, report to user the outcome
@@ -149,11 +153,7 @@ class TicTacToe
 #     until the game is over
 #   take turns
  
-# if the game was won
-#   congratulate the winner
-# else if the game was a draw
-#   tell the players it ended in a draw
-# end
+
   end
   
 end
