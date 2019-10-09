@@ -135,7 +135,9 @@ class TicTacToe
   end
   
   def play
+    #takes turn unless game is over
     turn
+    won?
     # must allow players to take turn
     # check if game is over after every turn
     # conclusion: won/ ended in draw, report to user the outcome
