@@ -118,7 +118,7 @@ class TicTacToe
   def draw?
     # true if board is full & there's a draw
     # false for won game / in-process game
-    turn_count == 9 && !won?
+    full? && !won?
   end
   
   def over?
@@ -128,7 +128,7 @@ class TicTacToe
   end
   
   def winner
-    
+    if won? 
   end
 end
 # foo = TicTacToe.initialize
