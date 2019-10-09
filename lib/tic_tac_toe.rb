@@ -135,7 +135,7 @@ class TicTacToe
   end
   
   def play
-    #takes turn unless game is over
+    #until game is over, take turns
     until over? do
       turn
     end
@@ -145,14 +145,6 @@ class TicTacToe
     elsif draw? #tell player game ended in draw if game was a draw
       puts "Cat's Game!" if draw?
     end
-    
-    # must allow players to take turn
-    # check if game is over after every turn
-    # conclusion: won/ ended in draw, report to user the outcome
-    
-#     until the game is over
-#   take turns
- 
 
   end
   
