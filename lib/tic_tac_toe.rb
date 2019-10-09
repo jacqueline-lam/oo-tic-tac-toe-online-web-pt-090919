@@ -136,7 +136,7 @@ class TicTacToe
   
   def play
     #takes turn unless game is over
-    while !won?
+    while !won? || !draw?
      turn
     end
     won?
