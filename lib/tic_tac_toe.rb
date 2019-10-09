@@ -128,8 +128,9 @@ class TicTacToe
   end
   
   def winner
+    
     idx = won?[0]
-    winner = @board[idx]
+    @board[idx] if won?
   end
 end
 # foo = TicTacToe.initialize
