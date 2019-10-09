@@ -137,6 +137,7 @@ class TicTacToe
   def play
     #takes turn unless game is over
     turn unless over?
+    return over?
 
     # must allow players to take turn
     # check if game is over after every turn
