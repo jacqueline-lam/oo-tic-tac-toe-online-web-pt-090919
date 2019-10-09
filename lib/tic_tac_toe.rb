@@ -122,7 +122,7 @@ class TicTacToe
   end
   
   def over?
-    won 
+    won? || draw?
   end
 end
 # foo = TicTacToe.initialize
