@@ -116,6 +116,9 @@ class TicTacToe
   end
   
   def draw?
+    #true if board is full and not been won
+    if turn_count == 9 and !won?
+    end
     
   end
 end
