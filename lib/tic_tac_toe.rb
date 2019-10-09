@@ -96,10 +96,10 @@ class TicTacToe
     # iterate thru each winning combo and compare each row @board's ele with combo's idx
     # i.e. first combo = [0,1,2]
     # combo.map {|idx| @board[idx]} = ["X", "O", "X"]
-    # ["X", "O", "X"].join = "XOX" == "XXX"? -> T/F
+    # ["X", "O", "X"].join = "XOX" == "XXX"? 
     # repeat process with next set of winning combo <-> @board row
     
-    results = WIN_COMBINATIONS.find { |combo|
+    winning_combo = WIN_COMBINATIONS.find { |combo|
       combo.map{ |idx| @board[idx] }.join == "XXX" ||
       combo.map{ |idx| @board[idx] }.join == "OOO"
     }  
@@ -128,7 +128,7 @@ class TicTacToe
   end
   
   def winner
-    if won? 
+    winner = won?.winning_combo[0] 
   end
 end
 # foo = TicTacToe.initialize
