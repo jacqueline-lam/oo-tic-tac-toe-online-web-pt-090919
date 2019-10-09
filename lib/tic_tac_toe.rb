@@ -111,6 +111,7 @@ class TicTacToe
   end
 
   def full?
+    #return true if every element in the board contains either an "X" or an "O"
     @board.none?(" ")
   end
   
