@@ -140,6 +140,7 @@ class TicTacToe
       turn
     end
     puts "Congratulations #{winner}!"
+    "Cat's Game!" if draw?
 
     # must allow players to take turn
     # check if game is over after every turn
