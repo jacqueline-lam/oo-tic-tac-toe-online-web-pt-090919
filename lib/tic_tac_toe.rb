@@ -128,8 +128,8 @@ class TicTacToe
   end
   
   def winner
-    binding.pry
-    # winner = won?.winning_combo[0] 
+    idx = won?[0]
+    winner = @board[idx]
   end
 end
 # foo = TicTacToe.initialize
