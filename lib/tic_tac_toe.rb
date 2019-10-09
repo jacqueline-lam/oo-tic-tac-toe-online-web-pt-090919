@@ -122,7 +122,13 @@ class TicTacToe
   end
   
   def over?
+    # true for draw/ won game
+    # false for in-process game
     won? || draw?
+  end
+  
+  def winner
+    
   end
 end
 # foo = TicTacToe.initialize
